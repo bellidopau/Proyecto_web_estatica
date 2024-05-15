@@ -8,6 +8,7 @@
 <body>
     <h1 class="formulario">formulario</h1>
 
+<<<<<<< Updated upstream
   <section>
 
       <!-- la razon es porque es mas seguro ponerlo como metodo post en ves de get que aparece en el url -->
@@ -65,5 +66,64 @@
   </fieldset>
   </form>
   </section>
+=======
+    <section>
+  
+        <!-- la razon es porque es mas seguro ponerlo como metodo post en ves de get que aparece en el url -->
+        <!-- poner el la accion el codigo url conde voy a recibir los datos a mi mail, es mucho muy importante -->
+        <!-- el target significa donde queres que se abra en este caso puse blanco para que se abra en otra espacio en blanco -->
+  
+        <form action="https://formspree.io/f/mgeddwzj" method="POST" target="_blank">
+  
+  
+            <label for="nombre">nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="ingresar nombre" required>
+            <hr>
+            <label>apellido </label>
+            <input type="text" name="apellido" id="apellido" placeholder="ingresar apellido" required>
+            <hr>
+            <label> opciones </label>
+  
+            <select name="selector">
+  
+                <option value="informacion">si queres recibir mas info por mail</option>
+                <option value="ayuda">si tenes algun problema y queres ayuda </option>
+                <option value="si se rompio mi codigo">si rompiste algo al instalar algun programa</option>
+                <option value="otros">otros</option>
+  
+            </select>
+            <hr>
+   <p id="comentariosxd">comentarios:</p> 
+    <label >
+        <textarea name="comentarios" cols="30" rows="10"></textarea>
+    </label>
+    <hr>
+    <!-- 
+    fieldset se utiliza para agrupar codigos -->
+    <!-- legend es para poner el titulo es como el h2 o h3 -->
+    <fieldset>
+        <legend>como podemos contactarte:</legend>
+    </fieldset>
+  
+    <label> email
+        <input type="email" name="e-mail" placeholder="ingresar e-mail" required>
+    </label>
+    <hr>
+    <label> telefono
+        <input type="number" name="telefono " placeholder="ingresar tu celular" required>
+    </label>
+    <hr>
+    <fieldset>
+  
+        <input type="reset" name="reset">
+        <!-- sirve para resetear ponele los datos que escribiste -->
+  
+        <input type="submit" name="submit">
+        <!-- 
+    sirve para enviar ponele los datos que escribiste -->
+    </fieldset>
+    </form>
+    </section>  
+>>>>>>> Stashed changes
 </body>
 </html>
