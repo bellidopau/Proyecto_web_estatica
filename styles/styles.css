@@ -77,7 +77,28 @@ header{
     color: black;
 }
 
-.principal{
+.inicio{
     width: 100px;
-    
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.inicio-foto1{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.inicio-foto1 h2{
+    font-size: 3.5em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.inicio-foto1 p{
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 15px;
+}
+
