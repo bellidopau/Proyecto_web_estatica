@@ -6,6 +6,7 @@
 }
 
 body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #dac9df;
     overflow-x: hidden;
 }
@@ -37,12 +38,12 @@ header{
     justify-content: space-evenly;
     gap: 20;
     border-radius: 30px;
-    transition: 0.4ms;
+    transition: 0.4s;
 }
 
 .nav-link{
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     text-decoration: none;
     border-radius: 25px;
     padding: 10px;
@@ -81,7 +82,7 @@ header{
 /*inicio*/
 
 .inicio{
-    width: 100px;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
@@ -106,6 +107,30 @@ header{
     margin-bottom: 15px;
 }
 
+.btn{
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    border: 2px solid black;
+    width: 170px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    translate: 0px;
+}
+
+.btn i{
+    font-size: 1.2em;
+    transition: transform 0.4s;
+}
+
+.btn:hover i{
+    transform: translateX(10px);
+}
+
 .inicio-imagenes{
     max-width: 600px;
     height: 100%;
@@ -114,31 +139,36 @@ header{
     justify-content: space-between;
 }
 
-.imagen-img{
+.imagenes-imgbox{
     position: relative;
     width: 300px;
     height: 450px;
-    border: 2px solid #b695c0;
+    border: 1px solid #b695c0;
     background-color: white;
 }
 
-.imagen-img img{
+.imagenes-imgbox img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 15px;
 }
 
-.imagen-img:nth-child(1){
+.imagenes-imgbox:nth-child(1){
     top: 70px;
     left: 50px;
     z-index: 1;
 }
 
 /*inicio*/
+
+/*imagenes*/
+
+.imagen-recursos{
+    width: 200px;
+}
 
 /*nosotros*/
 
@@ -212,6 +242,7 @@ address a {
 }
 
 /* Responsive*/
+/*desktop-first*/
 
 @media screen and (max-width: 1200px) {
     .nav {
@@ -231,9 +262,9 @@ address a {
         height: 500px;
     }
 
-/*mobile*/
+/*mobile-first*/
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 480px){
     header{
         padding: 20px 20px;
     }

@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <title>Sitio Web</title>
 </head>
 <body>
     <h1 class="formulario">formulario</h1>
@@ -18,40 +20,40 @@ Updated upstream
       <form action="https://formspree.io/f/mgeddwzj" method="POST" target="_blank">
 
 
-          <label for="nombre">nombre</label>
+          <label for="nombre">Nombre</label>
           <input type="text" name="nombre" id="nombre" placeholder="ingresar nombre" required>
           <hr>
-          <label>apellido </label>
+          <label>Apellido </label>
           <input type="text" name="apellido" id="apellido" placeholder="ingresar apellido" required>
           <hr>
-          <label> opciones </label>
+          <label> Opciones </label>
 
           <select name="selector" id="motivo">
 
-              <option value="informacion">si queres recibir mas info por mail</option>
-              <option value="ayuda">si tenes algun problema y queres ayuda </option>
-              <option value="si, se rompio mi codigo">si rompiste algo al instalar algun programa</option>
-              <option value="otros">otros</option>
+              <option value="informacion">Si queres recibir mas info por mail</option>
+              <option value="ayuda">Si tenes algun problema y queres ayuda </option>
+              <option value="si, se rompio mi codigo">Si salio algo al instalar algun programa</option>
+              <option value="otros">Otros</option>
 
           </select>
           <hr>
- <p id="comentariosxd">comentarios:</p> 
-  <label >
-      <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-  </label>
-  <hr>
+            <p id="comentariosxd">Comentarios:</p> 
+            <label >
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            </label>
+            <hr>
   <!-- 
   fieldset se utiliza para agrupar codigos -->
   <!-- legend es para poner el titulo es como el h2 o h3 -->
   <fieldset>
-      <legend>como podemos contactarte:</legend>
+      <legend>Como podemos contactarte:</legend>
   </fieldset>
 
-  <label> email
+  <label> Email
       <input type="email" name="e-mail" id="email" placeholder="ingresar e-mail" required>
   </label>
   <hr>
-  <label> telefono
+  <label> Telefono
       <input type="number" name="telefono " id="telefono" placeholder="ingresar tu celular" required>
   </label>
   <hr>
@@ -66,6 +68,18 @@ Updated upstream
   </fieldset>
   </form>
   </section>
+
+  <footer>
+    <a href="#" class="logo">P</a>
+    <address>123, Buenos Aires
+        Tel: <a href="tel:12345679">+5493886145908</a>
+    </address>
+    <div class="enlaces">
+        <a href="#">Terminos y condiciones</a>
+        <a href="#">Politicas de privacidad</a>
+        <a href="#">Terminos de uso</a>
+    </div>
+</footer>
 <script src="../scripts/app.js"></script>
 </body>
 </html>
