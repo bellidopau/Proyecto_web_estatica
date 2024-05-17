@@ -193,7 +193,7 @@ header{
 .nosotros-texto p{
     max-width: 600px;
     font-size: 1.1em;
-    color: brown;
+    color: black;
 }
 
 .nosotros-texto p span{
@@ -202,11 +202,12 @@ header{
 
 
 footer{
-    background-color: black;
+    background-color: #81638b;
     width: 100%;
     height: auto;
     padding: 80px;
     display: flex;
+    justify-content: space-around;
 }
 
 footer.logo{
