@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <title>Sitio Web</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="formulario.html" class="nav-link" target="_blank">Consultas</a>
+            <a href="recursos.html" class="nav-link" target="_blank">Recursos</a>
+        </nav>
+
+        <div class="redes">
+            <a href="#" class="link-redes">
+                <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="link-redes">
+                <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="#" class="link-redes">
+                <i class="ri-twitter-x-line"></i>
+            </a>
+            <button class="menu"><i class="ri-menu-line"></i></button>
+        </div>
+    </header>
+    
+
+    <h1 class="formulario">formulario</h1>
+
+Updated upstream
+  <section class="inicio">
+
+      <!-- la razon es porque es mas seguro ponerlo como metodo post en ves de get que aparece en el url -->
+      <!-- poner el la accion el codigo url conde voy a recibir los datos a mi mail, es mucho muy importante -->
+      <!-- el target significa donde queres que se abra en este caso puse blanco para que se abra en otra espacio en blanco -->
+
+      <form action="https://formspree.io/f/mgeddwzj" method="POST" target="_blank">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="ingresar nombre" required>
+          <hr>
+
+          <label>Apellido </label>
+          <input type="text" name="apellido" id="apellido" placeholder="ingresar apellido" required>
+          <hr>
+
+          <label> Opciones </label>
+          <select name="selector" id="motivo">
+            <option value="informacion">Si queres recibir mas info por mail</option>
+            <option value="ayuda">Si tenes algun problema y queres ayuda </option>
+            <option value="si, se rompio mi codigo">Si salio algo al instalar algun programa</option>
+            <option value="otros">Otros</option>
+        </select>
+          <hr>
+          
+            <p id="comentariosxd">Comentarios:</p> 
+            <label >
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            </label>
+            <hr>
+  <!-- 
+  fieldset se utiliza para agrupar codigos -->
+  <!-- legend es para poner el titulo es como el h2 o h3 -->
+  <fieldset>
+      <legend>Como podemos contactarte:</legend>
+  </fieldset>
+
+  <label> Email
+      <input type="email" name="e-mail" id="email" placeholder="ingresar e-mail" required>
+  </label>
+  <hr>
+  <label> Telefono
+      <input type="number" name="telefono " id="telefono" placeholder="ingresar tu celular" required>
+  </label>
+  <hr>
+  <fieldset>
+
+      <input type="reset" name="reset">
+      <!-- sirve para resetear ponele los datos que escribiste -->
+
+      <input type="submit" name="submit">
+      <!-- 
+  sirve para enviar ponele los datos que escribiste -->
+  </fieldset>
+  </form>
+  </section>
+
+  <footer>
+    <a href="#" class="logo">P</a>
+    <address>123, Buenos Aires
+        Tel: <a href="tel:12345679">+5493886145908</a>
+    </address>
+    <div class="enlaces">
+        <a href="#">Terminos y condiciones</a>
+        <a href="#">Politicas de privacidad</a>
+        <a href="#">Terminos de uso</a>
+    </div>
+</footer>
+<script src="../scripts/app.js"></script>
+</body>
+</html>
